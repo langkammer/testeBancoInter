@@ -4,11 +4,11 @@ Para instalar e executar o sistema favor seguir os seguintes passos
 
 ### Usando a aplicacao
 Backend para codigo rest client onde deve rodar :
-######Para Instalar Dependencias
+###### Para Instalar Dependencias
 `mvn install`
-######Para Rodar
+###### Para Rodar
 `mvn spring-boot:run` 
-######Para Executar Testes Unitarios
+###### Para Executar Testes Unitarios
 `mvn test` 
 
 | Nome              | Tipo Requisição | URl                    | Param                                                   | Precisa Autenticação ?  |
