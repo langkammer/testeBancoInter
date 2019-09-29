@@ -1,0 +1,245 @@
+{
+	"info": {
+		"_postman_id": "aa0a221e-d71e-4ace-bf91-04c222b4751c",
+		"name": "PROVA BANCO INTER",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:9000/usuario",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"email\" : \"robsonlangkammer@hotmail.com\",\n  \"pass\"  : \"123456\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:9000/usuario?nome=Robs",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"usuario"
+					],
+					"query": [
+						{
+							"key": "nome",
+							"value": "Robs"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9000/usuario",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJBcGkiLCJzdWIiOiIxIiwiaWF0IjoxNTY0MTQzNTEzLCJleHAiOjE1NjUwMDc1MTN9.VOm7AiHQKhbpRBevdczFVNoKfqrRRqo6SXFWFxy6w_w",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"nome\": \"Robson\",\n  \"email\": \"robsonlangkammer@hotmail.com\",\n  \"resultadoVoList\": [\n  \t{\n\t\"resultado\" : 10\n  \t}\n  ]  \n}"
+				},
+				"url": {
+					"raw": "http://localhost:9000/usuario",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"usuario"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9000/usuario",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJBcGkiLCJzdWIiOiIxIiwiaWF0IjoxNTY0MTQzNTEzLCJleHAiOjE1NjUwMDc1MTN9.VOm7AiHQKhbpRBevdczFVNoKfqrRRqo6SXFWFxy6w_w",
+						"type": "text"
+					},
+					{
+						"key": "id",
+						"value": "1",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"id\": 1,\t\n  \"nome\": \"Robson a\",\n  \"email\": \"robsonlangkammer@hotmail.com\",\n  \"resultadoVoList\": [\n  \t{\n\t\"resultado\" : 10\n  \t}\n  ]  \n}"
+				},
+				"url": {
+					"raw": "http://localhost:9000/usuario",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"usuario"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "1",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9000/usuario",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJBcGkiLCJzdWIiOiIxIiwiaWF0IjoxNTY0MTQzNTEzLCJleHAiOjE1NjUwMDc1MTN9.VOm7AiHQKhbpRBevdczFVNoKfqrRRqo6SXFWFxy6w_w",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"nome\": \"Robson\",\n  \"email\": \"robsonlangkammer@hotmail.com\",\n  \"resultadoVoList\": [\n  \t{\n\t\"resultado\" : 10\n  \t}\n  ]  \n}"
+				},
+				"url": {
+					"raw": "http://localhost:9000/usuario?id=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"usuario"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9000/usuario/calculoDigito",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJBcGkiLCJzdWIiOiIxIiwiaWF0IjoxNTY0MTQzNTEzLCJleHAiOjE1NjUwMDc1MTN9.VOm7AiHQKhbpRBevdczFVNoKfqrRRqo6SXFWFxy6w_w",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"digito\": 6544,\n  \"usuarioVo\" : {\n  \t\"id\": 1\n  }\n}"
+				},
+				"url": {
+					"raw": "http://localhost:9000/usuario/calculoDigito",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"usuario",
+						"calculoDigito"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

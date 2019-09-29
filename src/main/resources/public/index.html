@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Prova Robson Apis Lista</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+</head>
+<body>
+  <h1>
+	<p>Prova Robson Apis Lista</p>
+  </h1>
+  <table style="width:100%" border="1">
+  <tr>
+    <th  colspan="5">End Points Disponiveis </th>
+  </tr>
+  <tr>
+    <td>Nome</td>
+    <td>Tipo Requisição</td>
+    <td>URl</td>
+    <td>Param</td>
+    <td>Precisa Autenticação ? </td>
+  </tr>
+  <tr>
+    <td>Lista Usuarios</td>
+    <td>GET</td>
+    <td>/usuario</td>
+    <td>[nome = String, page = number, limit = number]</td>
+    <td>Sim</td>
+  </tr>
+  <tr>
+    <td>Cria Usuarios</td>
+    <td>POST</td>
+    <td>/usuario</td>
+    <td>{nome : String, email: String, resultadoVoList : Array}</td>
+    <td>Sim</td>
+  </tr>
+  <tr>
+    <td>Atualiza Usuarios</td>
+    <td>PUT</td>
+    <td>/usuario</td>
+    <td>{nome : String, email: String, resultadoVoList : Array}</td>
+    <td>Sim</td>
+  </tr>
+  <tr>
+    <td>Deleta Usuarios</td>
+    <td>DELETE</td>
+    <td>/usuario?id=number</td>
+    <td>Params na url req</td>
+    <td>Sim</td>
+  </tr>
+  <tr>
+    <td>Calcula Digito</td>
+    <td>POST</td>
+    <td>/usuario/calculoDigito</td>
+    <td>{digito : number, usuarioVo: Object}</td>
+    <td>Sim</td>
+  </tr>
+  </table>
+</body>
+</html>
